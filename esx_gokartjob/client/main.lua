@@ -89,6 +89,7 @@ function OpenMechanicActionsMenu()
 								ESX.Game.SpawnVehicle(data.current.value, Config.Zones.VehicleSpawnPoint.Pos, 90.0, function(vehicle)
 									local playerPed = PlayerPedId()
 									TaskWarpPedIntoVehicle(playerPed,  vehicle, -1)
+							else print ("Error")
 								end)
 							else
 								ESX.ShowNotification(_U('service_full') .. inServiceCount .. '/' .. maxInService)
