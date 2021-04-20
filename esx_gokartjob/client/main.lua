@@ -141,7 +141,7 @@ function OpenMobileMechanicActionsMenu()
 			{label = _U('billing'),       value = 'billing'},
 			{label = _U('repair'),        value = 'fix_vehicle'},
 			{label = _U('clean'),         value = 'clean_vehicle'},
-			{label = _U('imp_veh'),       value = 'del_vehicle'}
+			{label = _U('imp_veh'),       value = 'del_vehicle'},
 	}}, function(data, menu)
 		if isBusy then return end
 
@@ -373,6 +373,9 @@ Citizen.CreateThread(function()
 end)
 
 -- Display markers
+-- Remove blips
+-- Optimize 
+
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
