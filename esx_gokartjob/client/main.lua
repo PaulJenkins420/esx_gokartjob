@@ -312,6 +312,12 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	ESX.PlayerData = xPlayer
 end)
 
+-- update to new esx ESX:NIL.PLAYER.X
+-- REMOVE CAROKIT FROM ENTRY
+
+
+-- ESX.NIL = esx:setJob xPlayer.identifier
+
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
 	ESX.PlayerData.job = job
@@ -384,6 +390,10 @@ Citizen.CreateThread(function()
 			if letSleep then
 				Citizen.Wait(500)
 			end
+				
+				-- Remove slepp
+				-- LOwer wait
+				
 		else
 			Citizen.Wait(500)
 		end
